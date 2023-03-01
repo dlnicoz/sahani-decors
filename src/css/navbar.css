@@ -1,0 +1,41 @@
+body{
+    background-color: black;
+}
+#navbtns {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 50%;
+  left: 30px;
+  z-index: 8888;
+  transform: translateY(-50%);
+  gap: 50px;
+}
+
+a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: white;
+}
+
+a:hover > #itemreveal {
+  display: block;
+}
+
+i {
+  font-size: 4.5rem;
+  color: white;
+}
+i:active {
+  font-size: 4.3rem;
+}
+
+#itemreveal {
+  padding: 2px 5px;
+  background-color: black;
+  border-radius: 0 5px 5px 0;
+  display: none;
+}
+
